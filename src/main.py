@@ -5,7 +5,7 @@ from PIL import Image
 import io
 import numpy as np
 
-model = load_model('my_model.h5')
+model = load_model('src/my_model.h5')
 vector = list()
 
 def reader(image_path:str)-> vector:
@@ -37,4 +37,4 @@ def index():
     return "OK"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='127.0.0.1', port=5001)
