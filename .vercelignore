@@ -1,0 +1,5 @@
+.git
+.github
+*.jpg
+apiTest.py
+model.py
